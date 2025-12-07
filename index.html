@@ -516,7 +516,7 @@
       <button
         class="button save-button"
         type="button"
-        onclick="window['dialog_save'].showModal(); return false;"
+        onclick="document.getElementById('dialog_save').showModal(); return false;"
       >
         <svg width="21" height="21" viewBox="0 0 21 21" class="save-icon">
           <use href="./svg/floppy.svg#floppy-icon"></use>
@@ -534,7 +534,7 @@
           <button
             type="button"
             class="button dialog-button"
-            onclick="window['dialog_save'].close(); return false;"
+            onclick="document.getElementById('dialog_save').close(); return false;"
           >
             <span class="button__text">OK</span>
           </button>
