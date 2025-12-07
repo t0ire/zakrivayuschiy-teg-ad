@@ -1,27 +1,33 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --main-font: "Inter-Variable", sans-serif;
-  --accent-font: "PressStart2P-Regular", fantasy;
-  --main-font-title: 715;
-  --main-font-text: 410;
-  --bg-gradient: repeating-linear-gradient(
+	--font-main: 'Inter-Variable', sans-serif;
+	--font-title: 'PressStart2P', monospace;
+
+	--text-color: #000;
+	--bg-color: #fff;
+	--border-color: #000;
+
+	--container-width: clamp(23.44rem, 16.29rem + 30.52svi, 43.75rem);
+	--title-size: clamp(3.06rem, 2.71rem + 1.5vw, 4.06rem);
+
+	--heart-contour: #000;
+	--heart-sparks: #ff0000;
+	--backdrop-color: rgb(0 0 0 / 0.75);
+
+	--bg-image: 
+    repeating-linear-gradient(
       to right,
-      #d3d3d3 0px,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
+      #d3d3d3 0 2px,
+      transparent 2px 4px
     ),
     repeating-linear-gradient(
       to bottom,
-      #d3d3d3 0px,
-      #d3d3d3 2px,
-      transparent 2px,
-      transparent 4px
+      #d3d3d3 0 2px,
+      transparent 2px 4px
     ),
-    repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-  --width-adaptive: clamp(20.833rem, 30.52vw + 14.5rem, 38.889rem);
-  --bg-color: #fff;
-  --bg-border-color: #000;
-  --accent-color: #000;
-  --default-color: #fff;
+    linear-gradient(
+      #e7e7e7 0.01%,
+      #1a1a1a
+    );
+    --bg-image-height: 960px;
 }
